@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
+body{
+    background-color: red;
+}
+
 #tittle{
     margin: 15px;
 }
