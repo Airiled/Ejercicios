@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#tittle{
+    margin: 15px;
+}
+
+body{
+
+}
+
+#table-container{
+    margin: 15px;
+}
+
+#list{
+    text-align: center;
+}
+
+#initialTable{
+    border-spacing: 0;
+    width: 90%;
+}
+
+
+
+.tittleColumn{
+    border: 1px black solid;
+    padding: 10px 15px 10px 0px;
+}
