@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 #tittle{
@@ -24,9 +25,11 @@ body{
     width: 90%;
 }
 
-
-
 .tittleColumn{
     border: 1px black solid;
-    padding: 10px 15px 10px 0px;
+    padding: 15px 15px 15px 5px;
+}
+
+.tittleColumn:hover{
+    background-color: lightgrey;
 }
