@@ -2,19 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 #tittle{
     margin: 15px;
 }
 
-body{
-
-}
-
 #table-container{
     margin: 15px;
 }
+
+/* Seccion para agregar usuarios */
+
+#createSection{
+    margin-bottom: 15px;
+}
+
+.userCreationBtn{
+    border: 1px black solid;
+    padding: 10px;
+    width: 200px;
+    background-color: white;
+    text-align: left;
+}
+
+.userCreationBtn:hover{
+    background-color: lightgray;
+}
+/* Tabla de usuarios */
 
 #list{
     text-align: center;
@@ -30,6 +46,12 @@ body{
     padding: 15px 15px 15px 5px;
 }
 
+.tittleColumn-add{
+    border: 1px black solid;
+    padding: 15px 15px 15px 5px;
+}
+
+
 .tittleColumn:hover{
-    background-color: lightgrey;
+    background-color: rgb(241, 238, 238);;
 }

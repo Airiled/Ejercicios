@@ -12,20 +12,26 @@
         <h1 id="tittle">Preparacion de conferencia</h1>
     </header>
 
-    <div id="table-container">
+        <div id="table-container">
+
+        <div id="createSection">
+            <input type="button" onclick="createNewUser()" value="+ Agregar un nuevo usuario" class="userCreationBtn">
+        </div>
+
         <div id="list">
             <table id="initialTable">
                 <tr>
-                    <td class="tittleColumn">id</td>
-                    <td class="tittleColumn">email</td>
-                    <td class="tittleColumn">addres</td>
-                    <td class="tittleColumn">phone</td>
-                    <td class="tittleColumn">company_name</td>
+                    <td class="tittleColumn">ID</td>
+                    <td class="tittleColumn">Email</td>
+                    <td class="tittleColumn">Address</td>
+                    <td class="tittleColumn">Telephone</td>
+                    <td class="tittleColumn">Company Name</td>
                 </tr>
             </table>
-        </div>
-        
+        </div>   
     </div>
+
+
     <script src="./main.js"></script>
 </body>
 </html>

@@ -1,21 +1,15 @@
-console.log('hola');
-
+//URL de la API
 const URL = 'https://jsonplaceholder.typicode.com/users';
 
+//Relacionamos variables con etiquetas para poder manipular el DOM
 const table = document.querySelector('#initialTable');
 const divTable = document.querySelector('#list');
 const tableContainer = document.querySelector('#table-container');
 
-async function getUsersData(){
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data = await res.json();
-    console.log(res);
-    console.log(data);
-    const users = data;
+const createUser = document.querySelector('#userCreation');
 
-    // console.log('probando');
-    // console.log(data[0].address.street);
-
+function createUserRow(users){
+    //Creamos las filas mediante los datos de la API o de los valores introducidos por el usuario
     users.forEach(user => {
         const tdCompany = document.createElement('td');
         tdCompany.classList.add('tittleColumn');
@@ -45,6 +39,32 @@ async function getUsersData(){
         tableContainer.append(divTable);
     });
 
+}
+
+async function getUsersData(){
+    //Obtenemos los valores de la API
+    const res = await fetch('https://jsonplaceholder.typicode.com/users');
+    const data = await res.json();
+    const users = data;
+
+    createUserRow(users);
+}
+
+function createNewUser(){
+    //Creamos un array que contenga un objeto para poder hacer funcionar el forEach a la hora de querer crear la fila del nuevo usuario
+    const user = [{
+        id: prompt('Ingrese su id: '),
+        email: prompt('Ingrese su email: '),
+        address:{
+            street: prompt('Ingrese su direccion: '),
+        },
+        phone: prompt('Ingrese su telefono: '),
+        company:{
+            name: prompt('Ingrese el nombre de su compania: '),
+        },
+    }];
+    
+    createUserRow(user);
 }
 
 getUsersData();
