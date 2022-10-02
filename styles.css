@@ -32,7 +32,7 @@
 }
 /* Tabla de usuarios */
 
-#list{
+#divTable{
     text-align: center;
 }
 
@@ -41,17 +41,12 @@
     width: 90%;
 }
 
-.tittleColumn{
-    border: 1px black solid;
-    padding: 15px 15px 15px 5px;
-}
-
-.tittleColumn-add{
+.columnData{
     border: 1px black solid;
     padding: 15px 15px 15px 5px;
 }
 
 
-.tittleColumn:hover{
+.columnData:hover{
     background-color: rgb(241, 238, 238);;
 }
