@@ -5,7 +5,7 @@ const table = document.querySelector('#initialTable');
 const divTable = document.querySelector('#divTable');
 const tableContainer = document.querySelector('#table-container');
 
-// ----
+let aux = true; // variable para colocarle el fondo de color a las filas de la tabla
 
 function createUserRow(users){
     //Creamos las filas mediante los datos de la API o de los valores introducidos por el usuario
@@ -31,7 +31,15 @@ function createUserRow(users){
         tdWeb.classList.add('columnData');
         tdWeb.innerHTML = user.website;
 
+
         const trData = document.createElement('tr');
+        //le agregamos color a la fila
+        if(aux){
+            trData.style.background = `#EEEEEE`;
+            aux = false;
+        }else{
+            aux = true;
+        }
 
         trData.append(tdName, tdUsername, tdEmail, tdPhone, tdWeb);
         table.append(trData);

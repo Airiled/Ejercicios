@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.muicss.com/mui-0.10.3/css/mui.min.css" rel="stylesheet" type="text/css" />
     <title>Ejercicio</title>
 </head>
 <body>
@@ -17,20 +19,20 @@
             <input type="button" onclick="createNewUser()" value="+ Agregar un nuevo usuario" class="userCreationBtn">
         </div>
 
-        <div id="divTable">
+        <div id="divTable" class="mui-container">
             <table id="initialTable">
-                <tr>
-                    <td class="columnData">Name</td>
-                    <td class="columnData">Username</td>
-                    <td class="columnData">Email</td>
-                    <td class="columnData">Telephone</td>
-                    <td class="columnData">Website</td>
+                <tr id="tableGeneral" class="mui--z1">
+                    <td class="columnData"><p>Name</p></td>
+                    <td class="columnData"><p>Username</p></td>
+                    <td class="columnData"><p>Email</p></td>
+                    <td class="columnData"><p>Phone</p></td>
+                    <td class="columnData"><p>Website</p></td>
                 </tr>
             </table>
         </div>   
     </div>
 
-
+    <script src="https://cdn.muicss.com/mui-0.10.3/js/mui.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>
